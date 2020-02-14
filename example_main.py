@@ -13,7 +13,7 @@ def range_graph(file):
 
 
 def label_difference(file1, file2):
-    """ Label difference between fil1 and file2 """
+    """ Displays difference between the labels of file1 and file2 """
     data1 = Dataset(file1)
     data2 = Dataset(file2)
     data1.compare(data2)
@@ -31,7 +31,7 @@ def train_tree(file_train, prune=False):
     tree = tree.train(x, y)
 
     if prune:
-        print("Prunning tree...")
+        print("Pruning tree...")
         tree.chi_prune()
 
     return tree
