@@ -3,7 +3,8 @@
 ### Introduction
 
 This repository contains code for training and using a Decision Tree, as well
-as code for interacting with data and evaluate perfomance.
+as code for interacting with data and evaluate perfomance. It was a short
+group project I did as part of my MSc.
 
 ### Data
 
