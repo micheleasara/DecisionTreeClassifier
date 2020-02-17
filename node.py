@@ -52,15 +52,6 @@ class Node(object):
         index_most_common = np.where(label_counts == max(label_counts))[0][0]
         return unique_labels[index_most_common], label_dict
 
-    def __str__(self):
-        if self.isLeaf is True:
-            return "%s" % self.label
-        else:
-            rule = '\n'.join((
-                r'IntNode %g' % self.attribute,
-                r'Rule: <= %g' % self.value))
-        return rule
-
     def __repr__(self):
         if self.isLeaf is True:
             return "%s" % self.label
